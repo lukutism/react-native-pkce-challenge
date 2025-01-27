@@ -74,9 +74,5 @@ android/keystores/debug.keystore
 # Turborepo
 .turbo/
 
-# React Native Codegen
-ios/generated
-android/generated
-
 # tests
 .tap
