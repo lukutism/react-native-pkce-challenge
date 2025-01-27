@@ -4,9 +4,7 @@ project(PkceChallenge)
 set (CMAKE_VERBOSE_MAKEFILE ON)
 set (CMAKE_CXX_STANDARD 14)
 
-add_library(react-native-pkce-challenge
-            SHARED
-            "${NODE_MODULES_DIR}/react-native/ReactCommon/jsi/jsi/jsi.cpp"
+add_library(react-native-pkce-challenge         SHARED
             ../cpp/react-native-pkce-challenge.cpp
             ../cpp/base64.cpp
             cpp-adapter.cpp
@@ -14,8 +12,5 @@ add_library(react-native-pkce-challenge
 
 # Specifies a path to native header files.
 include_directories(
-            "${NODE_MODULES_DIR}/react-native/React"
-            "${NODE_MODULES_DIR}/react-native/React/Base"
-            "${NODE_MODULES_DIR}/react-native/ReactCommon/jsi"
             ../cpp
 )
